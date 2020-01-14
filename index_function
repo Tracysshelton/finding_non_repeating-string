@@ -1,0 +1,12 @@
+var fruits = ["Apple", "Orange", "Apple", "Mango", "Orange", "Mango", "Apple", "Orange", "Apple", "Mango", "Orange", "Mango", "kiwi"];
+
+for(i = 0; i < fruits.length; i++) {
+     var num = i+1;
+     var theFruit = fruits[i]
+     if(fruits.indexOf(theFruit, num) === -1 && fruits.indexOf(theFruit) === fruits.lastIndexOf(theFruit)) 
+         break
+     else
+         theFruit = "all repeat"
+}
+
+print(theFruit)
